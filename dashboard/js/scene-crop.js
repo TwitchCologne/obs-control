@@ -60,10 +60,11 @@ function setCrop() {
 	properties.crop.right = parseFloat(document.getElementById("rightCrop").value);
 	properties.crop.bottom = parseFloat(document.getElementById("bottomCrop").value);
 
-	if (properties.crop.left !== document.getElementById("leftCrop").value)
-		properties.position.x = parseFloat(document.getElementById("leftCrop").value);
-	if (properties.crop.top !== document.getElementById("topCrop").value)
-		properties.position.y = parseFloat(document.getElementById("topCrop").value);
+// we do not want this behavior
+//	if (properties.crop.left !== document.getElementById("leftCrop").value)
+//		properties.position.x = parseFloat(document.getElementById("leftCrop").value);
+//	if (properties.crop.top !== document.getElementById("topCrop").value)
+//		properties.position.y = parseFloat(document.getElementById("topCrop").value);
 	currentCrop.value = properties;
 }
 
