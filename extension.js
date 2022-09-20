@@ -246,7 +246,7 @@ module.exports = function (nodecg) {
 						obs.send('SetSourceSettings', {
 							sourceName: nodecg.bundleConfig.sources.player[i],
 							sourceSettings: {
-								url: 'https://player.twitch.tv/?parent=BLAH&volume=1&!muted&channel=' + newVal[i] + twitchQuality,
+								url: 'https://twitch.cologne/player?volume=1&!muted&channel=' + newVal[i] + twitchQuality,
 							}
 						}).catch((error) => websocketError(error));
 					}
